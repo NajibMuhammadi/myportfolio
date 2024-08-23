@@ -1,5 +1,6 @@
 import BonzImage from '../../assets/image1.jpg'
 import MyMovieDataBaseImage from '../../assets/najibmuhammadi.jpeg'
+import NsSneakersImage from '../../assets/ns-sneakers.png'
 
 const Projects = [
     {
@@ -23,6 +24,19 @@ const Projects = [
             {src: 'https://skillicons.dev/icons?i=github', alt: 'Github' }
         ],
         projectImage: MyMovieDataBaseImage
+    },
+    {
+        id: 3,
+        projectTitle: 'Ns-sneakers',
+        projectSubtitle: 'En webbapplikation som fokuserar på att sälja sneakers. Användare kan se olika sneakers, Användare kan registrera sig och logga in, Användare kan lägga till profilbild.',
+        projectSkills: [
+            {src: 'https://skillicons.dev/icons?i=react', alt: 'react' },
+            {src: 'https://skillicons.dev/icons?i=javascript', alt: 'Javascript' },
+            { src: 'https://skillicons.dev/icons?i=nodejs', alt: 'Node js' },
+            {src: 'https://skillicons.dev/icons?i=php', alt: 'Php' },
+            {src: 'https://skillicons.dev/icons?i=mysql', alt: 'mySql' }
+        ],
+        projectImage: NsSneakersImage
     }
 ]
 

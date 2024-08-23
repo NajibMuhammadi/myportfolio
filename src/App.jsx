@@ -27,7 +27,7 @@ function App() {
       />
       <Scroller title="Kompetens" />
       <Project
-        id={1}
+        id={3}
         title="Project"
         subtitle="mina favoritprojekt"
         showBackground={true}
@@ -35,6 +35,11 @@ function App() {
       />
       <Project
         id={2}
+        showBackground={false}
+        MarginNone= {false}
+      />
+      <Project
+        id={1}
         showBackground={false}
         MarginNone= {false}
       />
