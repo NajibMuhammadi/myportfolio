@@ -15,7 +15,9 @@ const AboutInfo = ({info}) => (
     <p className='about__info'>{info}</p>
 )
 const AboutBtn = ({ btn }) => (
-    <button className='about__btn'>{btn}</button>
+    <a className='about__btn-link' href="#contact">
+        <button className='about__btn'>{btn}</button>
+    </a>
 )
 function About({
     imageSrc,

@@ -22,7 +22,7 @@ function App() {
         title="About me"
         subtitle="Frontend Utvecklare + "
         highlight="Studerar"
-        info="Jag heter Najibullah (Najib) Muhammadi, är 20 år gammal. en frontend-utvecklare med lite erfarenheter i backend-utveckling och student på yrkeshögskola i Karlstad. Jag har ett stort intresse för teknik och en passion för att skapa högkvalitativa, användarvänliga webbplatser. Med min kreativa problemlösningsförmåga och min förmåga att arbeta självständigt eller i ett team, är jag redo att ta mig an nya utmaningar inom frontendutveckling."
+        info="Jag heter Najibullah (Najib) Muhammadi, är 20 år gammal. en frontend-utvecklare med lite erfarenheter i backend-utveckling och student på yrkeshögskola i Karlstad. Jag har ett stort intresse för teknik och en passion för att skapa högkvalitativa, användarvänliga webbplatser. Med min kreativa problemlösningsförmåga omvandlar jag dina idéer till effektiva och stilrena digitala lösningar."
         btn="Let's talk"
       />
       <Scroller title="Kompetens" />

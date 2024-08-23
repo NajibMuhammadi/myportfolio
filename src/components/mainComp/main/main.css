@@ -8,7 +8,6 @@
     animation: slideInLeft 1.3s ease-in-out;
     display: grid;
     place-content: center;
-    width: 50%;
     margin: 3rem auto;
     max-width: 1200px;
 }
