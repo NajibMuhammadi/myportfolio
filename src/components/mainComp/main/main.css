@@ -1,0 +1,83 @@
+.main {
+    height: calc(-100px + 100vh);
+    background: linear-gradient(135deg, var(--background-root) 0%, var(--subground-default) 50%, var(--subground-root) 50%, var(--background-default) 100%);
+    padding-top: 4rem;
+    min-height: 600px;
+}
+.main__content {
+    animation: slideInLeft 1.3s ease-in-out;
+    display: grid;
+    place-content: center;
+    width: 50%;
+    margin: 3rem auto;
+    max-width: 1200px;
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+.main__content-title {
+    animation: typing1 4s linear 1.6s infinite;
+    background: -webkit-linear-gradient(135deg, var(--accent-primary-dimmer), var(--accent-primary-stronger));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--font-size-header-big);
+    font-family: var(--font-family-ui);
+    margin: 0;
+    line-height: 1;
+    width: 100%;
+}
+.main__content-highlight {
+    background: -webkit-linear-gradient(120deg, var(--subground-highest), var(--linear-default));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--font-size-header-big);
+    font-family: var(--font-family-ui);
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 3px;
+    display: block;
+    animation: typing1 4s linear 3.4s infinite;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.main__content-title,
+.main__content-highlight{
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing1 {
+    from {
+        width: 0
+    }
+}
+
+.main__content-subtitle {
+    overflow-wrap: break-word;
+    font-size: var(--font-size-subhead-default);
+    line-height: var(--line-height-default);
+    color: var(--foreground-dimmer);
+    padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px){
+    .main{
+        padding-top: 0;
+        min-height: auto;
+        display: flex;
+    }
+    .main__content{
+        width: 95%;
+        margin: 0 auto;
+    }
+}

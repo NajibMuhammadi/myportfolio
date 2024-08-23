@@ -1,0 +1,9 @@
+.Scroller__top-background{
+    min-height: 100px;
+    width: 100vw;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    position: relative;
+    background: var(--background-default);
+    z-index: 5;
+}

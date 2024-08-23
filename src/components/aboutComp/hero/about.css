@@ -1,0 +1,116 @@
+.about{
+    padding: 100px 0px;
+    background-color: var(--background-default);
+}
+
+.about__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    max-width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.about__image{
+    width: 100%;
+    animation: slideImg ease-in-out;
+    animation-timeline: view();
+    border-radius: 20px;
+}
+
+@keyframes slideImg {
+    0% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: .5;
+    }
+
+    40% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.about__content-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: slideText ease-in;
+    animation-timeline: view();
+}
+
+@keyframes slideText {
+    0% {
+        transform: translateX(150%);
+    }
+
+    40% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.about__title{
+    color: white;
+    font-size: clamp(2rem, -4rem + 12vw, 5rem);
+    text-transform: capitalize;
+}
+.about__subtitle{
+    color: white;
+    letter-spacing: 3px;
+    font-size: clamp(1.2rem, 0.4rem + 1.6vw, 1.6rem);
+    text-transform: capitalize;
+    margin-bottom: 0.6rem;
+}
+.about__highlight{
+    background: -webkit-linear-gradient(135deg, var(--accent-primary-dimmer), var(--accent-primary-stronger));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about__info{
+    overflow-wrap: break-word;
+    font-size: var(--font-size-subhead-default);
+    line-height: var(--line-height-default);
+    color: var(--foreground-dimmer);
+}
+.about__btn{
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: black;
+  font-size: .9rem;
+  background-color: var(--foreground-dimmer);
+}
+.about__btn:hover{
+    background-color: transparent;
+    color: white;
+    outline: 3px solid white;
+}
+
+@media only screen and (max-width: 768px){
+    .about{
+        padding: 50px 0;
+    }
+    .about__content{
+        grid-template-columns: 1fr;
+        max-width: 95%;
+    }
+    .about__image,
+    .about__content-text{
+        animation: none;
+    }
+}

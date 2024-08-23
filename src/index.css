@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --space-4: 4px;
+  --space-8: 8px;
+  --border-radius-8: 8px;
+  --font-size-default: 14px;
+  --font-size-small: 12px;
+  --font-size-header-big: 56px;
+  --font-size-subhead-default: 20px;
+  --font-size-subhead-big: 24px;
+  --font-family-default: "Open Sans", sans-serif;
+  --font-family-ui: "Nunito Sans", sans-serif;
+  --font-weight-medium: 500;
+  --line-height-default: 1.6;
+  --line-height-subhead-big: 1.2;
+  --background-root: #121f33;
+  --background-default: #14243c;
+  --background-higher: #162f4b;
+  --subground-root: #293547;
+  --subground-default: #334252;
+  --subground-highest: #485968;
+  --linear-default: #bfd2e7;
+  --foreground-dimmest: #8090a0;
+  --foreground-dimmer: #b8c5d1;
+  --foreground-default: #f4faff;
+  --accent-primary-dimmest: #2d7b7455;
+  --accent-primary-dimmer: #45988477;
+  --accent-primary-stronger: #8dc8baaa;
+  --accent-primary-strongest: #a7d4bccc;
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--foreground-default);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.scroll-watcher {
+  height: 5px;
+  border-radius: 10%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background: linear-gradient(#ff22e6, #642bff);
+  width: 100%;
+  scale: 0 1;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+  transform-origin: left;
+}
+
+@keyframes scroll-watcher {
+  to {
+      scale: 1 1;
+  }
+}

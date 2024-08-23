@@ -1,0 +1,15 @@
+.header__social-link {
+    font-size: 2rem;
+    color: var(--foreground-default);
+    margin: 0 0.9rem;
+}
+.header__social-icon:hover{
+    transform: translateY(-5px);
+    color: var(--accent-primary-strongest);
+}
+
+@media (max-width:800px){
+    .header__social{
+        display: none;
+    }
+}

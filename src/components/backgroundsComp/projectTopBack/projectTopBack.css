@@ -1,0 +1,8 @@
+.project__top-background{
+    min-height: 100px;
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    position: relative;
+    background: var(--background-root);
+    z-index: 5;
+}

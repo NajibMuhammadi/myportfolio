@@ -1,0 +1,19 @@
+.main__background {
+    min-height: 100px;
+    width: 100vw;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    position: relative;
+    background: var(--linear-default);
+    z-index: 5;
+    margin-top: -100px;
+}
+.main__background::before {
+    content: "";
+    position: absolute;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    min-height: 100px;
+    width: 100vw;
+    top: 4px;
+    background: var(--background-default);
+    z-index: 4;
+}

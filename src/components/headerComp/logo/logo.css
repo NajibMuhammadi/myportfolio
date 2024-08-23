@@ -1,0 +1,9 @@
+.header__logo-link {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--foreground-default);
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}

@@ -1,0 +1,96 @@
+.project{
+    background-color: var(--background-default);
+    padding-bottom: 3rem;
+}
+
+.project__info{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.project__text-content{
+    margin: 1rem 0;
+}
+.project__title{
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-subhead-big);
+    font-family: var(--font-family-ui);
+}
+.project__subtitle,
+.project__info-text{
+    overflow-wrap: break-word;
+    font-size: var(--font-size-default);
+    line-height: var(--line-height-default);
+    color: var(--foreground-dimmer);
+}
+
+.project__hero-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    row-gap: 5rem;
+}
+.project__hero{
+    animation: slideImg ease-in-out;
+    animation-timeline: view();
+}
+.project__hero-img{
+    width: 100%;
+    border-radius: 15px;
+    outline: 2px solid var(--background-higher);
+}
+
+.project__info-content{
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    animation: slideText ease-in;
+    animation-timeline: view();
+}
+
+.project__info-title{
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-subhead-big);
+    font-family: var(--font-family-ui);
+}
+.project__skills{
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+@media only screen and (max-width: 768px){
+    .project{
+        padding-bottom: 0;
+    }
+    .project__info{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .project__text-content{
+        margin: 0 0 .5rem 0;
+    }
+    .project__title{
+        padding-bottom: .5rem;
+    }
+    .project__hero-container{
+        grid-template-columns: 1fr;
+        row-gap: .6rem;
+        padding-bottom: 2rem;
+    }
+    .project__hero{
+        animation: none;
+    }
+    .project__info-content{
+        grid-column: auto;
+        animation: none;
+    }
+    .project__info-title{
+        padding-bottom: .5rem;
+        font-size: 1.4rem;
+    }
+}
